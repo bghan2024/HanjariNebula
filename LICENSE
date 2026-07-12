@@ -1,0 +1,47 @@
+HANJARINEBULA NON-COMMERCIAL ACADEMIC SOFTWARE LICENSE AGREEMENT
+Version 1.0 (July 2026)
+
+This License Agreement (the "Agreement") is a binding legal contract between the individual researcher or academic/non-profit institution ("Licensee") and the developer, Han Byeong-gu ("Licensor"), regarding the use of the HanjariNebula Engine OS Suite, which includes "HanjariFold2_CosmicDistiller_OS.py" and "HanjariNebulaEngine_OS.py" (collectively, the "Software").
+
+IMPORTANT TERMINOLOGY NOTE:
+The abbreviation "OS" in the Software name and file suffixes stands for "OpenMM Solvation Support". It does NOT signify "Open Source" under the Open Source Initiative (OSI) definition. This Software is distributed strictly as a Source-Available Academic Release, with commercial use explicitly prohibited without a separate contract.
+
+BY DOWNLOADING, INSTALLING, COPYING, OR USING THE SOFTWARE, YOU AGREE TO BE BOUND BY ALL TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE, DO NOT WORK WITH THIS SOFTWARE.
+
+================================================================================
+❗ CRITICAL ATTRIBUTION MANDATE: MANDATORY CITATION CLAUSE
+================================================================================
+AS A MATERIAL CONDITION OF THIS LICENSE, LICENSEE MUST PROMINENTLY CITE THE
+SOFTWARE IN ANY PUBLICATION, PRESENTATION, PATENT, OR OTHER SCIENTIFIC OUTPUT
+THAT RESULTS FROM OR UTILIZES WORK PRODUCED WITH THIS SOFTWARE.
+
+CITATION REQUIREMENTS ARE STATED IN SECTION 4 AND MUST BE FOLLOWED EXACTLY.
+FAILURE TO PROPERLY CITE SCIENTIFIC PRODUCTIONS VOIDS THIS LICENSE AGREEMENT.
+================================================================================
+
+1. DEFINITIONS
+a. "Academic Institution" means accredited educational bodies (such as universities and colleges) and public, non-profit scientific research organizations.
+b. "Non-Commercial Academic Use" means use of the Software solely for scholarly, non-profit academic research, teaching, or educational training purposes. It excludes any research sponsored by, contracted for, or conducted in collaboration with commercial or for-profit entities.
+c. "Commercial Use" means any use of the Software for financial gain, business activities, proprietary industrial research, CRO (Contract Research Organization) services, or integration into proprietary software products or pipelines.
+
+2. GRANT OF LICENSE
+Subject to the terms of this Agreement, Licensor grants Licensee a non-exclusive, non-transferable, royalty-free, limited license to run, modify, and copy the Software solely for Non-Commercial Academic Use.
+
+3. RESTRICTIONS
+a. NO COMMERCIAL USE: Under this license, the Software may NOT be used for any Commercial Use. Any commercial entity wishing to use the Software must obtain a separate written Commercial License from the Licensor and pay any applicable fees.
+b. REDISTRIBUTION: Licensee may not distribute, lease, rent, sublicense, or transfer the Software or any derivatives to third parties for commercial gain or under any commercial agreements.
+c. PROPRIETARY NOTICES: Licensee must maintain all original copyright, developer attribution, and licensing headers in all copies or derivatives of the Software.
+
+4. CITATION AND ATTRIBUTION (MANDATORY)
+Licensee must cite the Software in all publications, reports, patents, presentations, or posters presenting discoveries made using the Software.
+a. SCIENTIFIC PAPER STATUS: The official peer-reviewed paper is currently in preparation (Pre-publication stage).
+b. CURRENT REQUIREMENT: Licensee MUST cite the official GitHub repository address:
+   "HanjariNebula Engine OS Suite, HanjariFold Authors (2026), GitHub Repository: https://github.com/bghan2024/HanjariNebula"
+c. JOURNAL CITATION EXAMPLE: The post-publication reference provided below is purely a hypothetical placeholder template for future use once the paper is officially published:
+   "Hanjari, et al. (2026). 'Memory-Efficient Continuum Hydration for Ultra-Large Macromolecular Refinement.' Journal of Molecular Biology (or CASP17 Proceedings)."
+
+5. DISCLAIMER OF WARRANTIES & LIABILITY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL THE DEVELOPER OR COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DIRECT OR INDIRECT, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OF THE SOFTWARE.
+
+6. GOVERNING LAW
+This Agreement shall be governed by and construed in accordance with the laws of the Republic of Korea, without regard to its conflict of law principles.
