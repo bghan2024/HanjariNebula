@@ -1,6 +1,6 @@
 # 🌌 HanjariNebula : CosmicDistiller Engine OS
 
-> **"From ultra-large ribosomes to viral capsids, purifying all AI-predicted macromolecular structures to their cleanest, most refined state."**
+> **"From single domains to massive multi-subunit assemblies, refining all AI-predicted protein structures to their cleanest, most physically robust state."**
 
 > [!WARNING]
 > **LICENSE NOTICE: FREE FOR ACADEMIC & NON-COMMERCIAL RESEARCH USE ONLY.**
