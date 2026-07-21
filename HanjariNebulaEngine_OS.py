@@ -5,6 +5,12 @@ HanjariNebulaEngine_OS (Open-Source / OpenMM Edition)
 A high-precision hybrid physical refinement engine designed for structural biology pipelines.
 Part of the HanjariNebula Engine OS Suite.
 
+CRITICAL USAGE NOTE:
+Due to the parametrization limitations of the default Amber14 forcefield libraries used
+(amber14/protein.ff14SB.xml), this engine is designed exclusively for protein structure refinement.
+Refining structures containing DNA, RNA, or other nucleic acids is highly discouraged and may
+lead to topology/parameter matching failures. It is proposed to limit usage to protein-only structures.
+
 Developer: Han Byeong-gu (hanbyeonggu@gmail.com)
 Repository: https://github.com/bghan2024/HanjariNebula
 Citation Ref: HanjariNebula Engine OS Suite (2026); see README.md for details.
@@ -95,6 +101,15 @@ class HanjariNebulaEngine_OS:
         ext = os.path.splitext(input_path)[-1].lower()
         structure_obj = PDBxFile(input_path) if ext in ['.cif', '.mmcif'] else PDBFile(input_path)
         old_topology = structure_obj.topology
+
+        # Check for nucleic acid residues and issue a warning
+        nucleic_residues = {'DA', 'DC', 'DG', 'DT', 'A', 'C', 'G', 'U', 'RA', 'RC', 'RG', 'RU'}
+        has_nucleic = any(r.name.strip().upper() in nucleic_residues for r in old_topology.residues())
+        if has_nucleic:
+            print("⚠️ [Warning] Nucleic acid residues (DNA/RNA) detected in the structure.")
+            print("   The loaded Amber14 forcefield is optimized exclusively for proteins.")
+            print("   Refining DNA/RNA structures may cause forcefield parameter matching failures.")
+            print("   It is highly recommended to use this suite for protein-only refinement.")
         old_pos_nm = structure_obj.positions.value_in_unit(unit.nanometers)
         
         # 💡 [CRITICAL BUG FIX]: Maps original heavy atoms to coordinates using chain and residue sequence index

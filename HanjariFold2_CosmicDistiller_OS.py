@@ -5,6 +5,12 @@ HanjariFold2_CosmicDistiller_OS (Open-Source / OpenMM Edition)
 An automated macromolecular hydration and physical energy minimization manager.
 Part of the HanjariNebula Engine OS Suite.
 
+CRITICAL USAGE NOTE:
+Due to the parametrization limitations of the default Amber14 forcefield libraries used
+(amber14/protein.ff14SB.xml), this engine is designed exclusively for protein structure refinement.
+Refining structures containing DNA, RNA, or other nucleic acids is highly discouraged and may
+lead to topology/parameter matching failures. It is proposed to limit usage to protein-only structures.
+
 Developer: Han Byeong-gu (hanbyeonggu@gmail.com)
 Repository: https://github.com/bghan2024/HanjariNebula
 Citation Ref: HanjariNebula Engine OS Suite (2026); see README.md for details.

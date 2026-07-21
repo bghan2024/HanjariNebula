@@ -14,6 +14,11 @@
 
 Unlike heavy, memory-intensive packages, `CosmicDistiller OS` is optimized for zero memory overhead (no Out-Of-Memory/OOM crashes). This allows ordinary research workstations to process massive complexes (like ribosomal assemblies) in seconds.
 
+> [!IMPORTANT]
+> **BIOLOGICAL TARGET RECOMMENDATION: PROTEIN-ONLY REFINE**
+> Due to parametrization limits in the scientific library dependencies (specifically the loaded Amber14 forcefield parameters: `amber14/protein.ff14SB.xml` and `amber14/tip3p.xml`), this engine is optimized and designed **exclusively for protein structures**.
+> Refining complexes containing **DNA, RNA, or other nucleic acids** is highly discouraged. Running calculations on structures with nucleic acids may cause parameter matching failures, missing residue topology definitions, or OpenMM simulation crashes. For stable and correct results, please use this engine only for **protein-only** refinement tasks.
+
 ---
 
 ## 🛠️ Architecture and Key Features
