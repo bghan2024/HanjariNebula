@@ -43,11 +43,12 @@ We recommend using `conda` or `mamba` to manage your environment, as OpenMM and 
 conda create -n hanjari_nebula python=3.10 -y
 conda activate hanjari_nebula
 
-# 2. Install OpenMM and dependencies
+# 2. Install OpenMM and core dependencies
 conda install -c conda-forge openmm scipy numpy gemmi -y
-```
 
-*(Note: Verify your GPU drivers and CUDA toolkit are correctly configured to enable CUDA/OpenCL acceleration.)*
+# 3. Install HanjariNebula Engine directly from GitHub
+pip install git+[https://github.com/bghan2024/HanjariNebula.git](https://github.com/bghan2024/HanjariNebula.git)
+(Note: Verify your GPU drivers and CUDA toolkit are correctly configured to enable CUDA/OpenCL acceleration.)
 
 ---
 
