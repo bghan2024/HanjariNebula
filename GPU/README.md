@@ -1,9 +1,8 @@
-# HanjariNebula Engine OS Suite
+# HanjariNebula Engine Suite
 
-[![License](https://img.shields.io/badge/License-Academic--Free-blue.svg)](LICENSE)
 [![Compute](https://img.shields.io/badge/GPU%20Acceleration-CUDA%20%7C%20OpenCL-success.svg)](#gpu-acceleration-details)
 
-HanjariNebula Engine OS (Open-Source Edition) is a high-precision macromolecular physical refinement and hydration compilation framework designed for modern structural biology pipelines. It utilizes **OpenMM** to reconstruct structured hydration grids and minimize energy states using restrained mechanics.
+HanjariNebula Engine is a high-precision macromolecular physical refinement and hydration compilation framework designed for modern structural biology pipelines. It utilizes **OpenMM** to reconstruct structured hydration grids and minimize energy states using restrained mechanics.
 
 ---
 
@@ -59,7 +58,7 @@ You can run either the molecular refinement engine independently or the entire h
 ### 1. Run Complete Hydration & Refinement Pipeline
 This automatically builds the hydration grid (water layer) around your protein and minimizes the system:
 ```bash
-python HanjariFold2_CosmicDistiller_OS.py <input_protein.pdb_or_cif>
+python HanjariFold2_CosmicDistiller_GPU.py <input_protein.pdb_or_cif>
 ```
 - **Output**: Generates a run directory (e.g., `HF2_NEBULA_DISTILLER_YYYYMMDD_HHMMSS/`) containing:
   - `distilled_final.cif`: The final, physically optimized protein-hydration complex.
@@ -67,7 +66,7 @@ python HanjariFold2_CosmicDistiller_OS.py <input_protein.pdb_or_cif>
 ### 2. Run Restrained Minimization Only
 To perform L-BFGS energy minimization with heavy-atom restraints without adding a water layer:
 ```bash
-python HanjariNebulaEngine_OS.py <input.pdb_or_cif> <output.cif>
+python HanjariNebulaEngine_GPU.py <input.pdb_or_cif> <output.cif>
 ```
 
 ---
@@ -87,7 +86,7 @@ python HanjariNebulaEngine_OS.py <input.pdb_or_cif> <output.cif>
 
 ### Citation
 ```text
-HanjariNebula Engine OS Suite (2026); GitHub Repository: https://github.com/bghan2024/HanjariNebula
+HanjariNebula Engine Suite (2026); GitHub Repository: https://github.com/bghan2024/HanjariNebula
 ```
 
 ---
