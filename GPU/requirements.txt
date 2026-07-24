@@ -1,0 +1,4 @@
+openmm>=8.0.0
+numpy>=1.20.0
+scipy>=1.7.0
+gemmi>=0.6.0
